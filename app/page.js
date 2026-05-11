@@ -15,18 +15,11 @@ export default function Home() {
           Learn how solar, wind, and hydro power can help our community reduce emissions,
           improve energy resilience, and create a cleaner future.
         </p>
-        <Link
-          href="/rankings"
-          className="mt-6 inline-block rounded-lg bg-white px-4 py-2 font-semibold text-emerald-700 transition hover:bg-emerald-100"
-        >
-          View Rankings
-        </Link>
       </section>
 
       <section className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {cardOrder.map((type) => {
           const topic = ENERGY_TOPICS[type];
-
           return (
             <Link
               href={`/energy/${type}`}
@@ -41,6 +34,22 @@ export default function Home() {
             </Link>
           );
         })}
+      </section>
+
+      {/* Rankings card at the bottom */}
+      <section className="mt-10 flex justify-center">
+        <Link
+          href="/rankings"
+          className="group w-full max-w-md rounded-2xl border border-emerald-200 bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+        >
+          <h2 className="text-2xl font-semibold text-emerald-950 group-hover:text-emerald-700 mb-2">
+            View Rankings
+          </h2>
+          <p className="text-sm leading-6 text-emerald-800">
+            See the top quiz scores and fastest completion times from our community.
+          </p>
+          <span className="mt-5 inline-block text-sm font-medium text-emerald-700">Go to Rankings →</span>
+        </Link>
       </section>
     </main>
   );
