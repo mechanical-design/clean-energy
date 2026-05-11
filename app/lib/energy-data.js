@@ -29,6 +29,86 @@ export const ENERGY_TOPICS = {
         ],
         correctOption: "rooftops",
       },
+        {
+          id: "q3",
+          prompt: "What is the main benefit of solar energy for the environment?",
+          options: [
+            { value: "emissions", label: "Reduces greenhouse gas emissions" },
+            { value: "noise", label: "Increases noise pollution" },
+            { value: "waste", label: "Produces hazardous waste" },
+          ],
+          correctOption: "emissions",
+        },
+        {
+          id: "q4",
+          prompt: "Which device is used to convert DC from solar panels to AC for home use?",
+          options: [
+            { value: "inverter", label: "Inverter" },
+            { value: "transformer", label: "Transformer" },
+            { value: "generator", label: "Generator" },
+          ],
+          correctOption: "inverter",
+        },
+        {
+          id: "q5",
+          prompt: "Solar panels work best when they are...",
+          options: [
+            { value: "shaded", label: "Shaded" },
+            { value: "clean", label: "Clean and unobstructed" },
+            { value: "wet", label: "Wet" },
+          ],
+          correctOption: "clean",
+        },
+        {
+          id: "q6",
+          prompt: "What is a common material used in solar cells?",
+          options: [
+            { value: "silicon", label: "Silicon" },
+            { value: "plastic", label: "Plastic" },
+            { value: "wood", label: "Wood" },
+          ],
+          correctOption: "silicon",
+        },
+        {
+          id: "q7",
+          prompt: "Which factor does NOT affect solar panel output?",
+          options: [
+            { value: "sunlight", label: "Amount of sunlight" },
+            { value: "panelAngle", label: "Panel angle" },
+            { value: "color", label: "Color of nearby cars" },
+          ],
+          correctOption: "color",
+        },
+        {
+          id: "q8",
+          prompt: "What happens to solar panel output on a cloudy day?",
+          options: [
+            { value: "decreases", label: "It decreases" },
+            { value: "increases", label: "It increases" },
+            { value: "same", label: "It stays the same" },
+          ],
+          correctOption: "decreases",
+        },
+        {
+          id: "q9",
+          prompt: "What is the typical lifespan of a solar panel?",
+          options: [
+            { value: "25years", label: "About 25 years or more" },
+            { value: "5years", label: "About 5 years" },
+            { value: "100years", label: "About 100 years" },
+          ],
+          correctOption: "25years",
+        },
+        {
+          id: "q10",
+          prompt: "Which of these is a limitation of solar energy?",
+          options: [
+            { value: "night", label: "No power generation at night" },
+            { value: "pollution", label: "Causes air pollution" },
+            { value: "fuel", label: "Requires fossil fuel input" },
+          ],
+          correctOption: "night",
+        },
     ],
   },
   wind: {
