@@ -40,6 +40,16 @@ export default async function EnergyDetailPage({ params }) {
         </ul>
       </section>
 
+      {/* Show solar image before quiz if type is 'solar' */}
+      {resolvedParams.type === "solar" && (
+        <div className="flex justify-center my-8">
+          <img
+            src="/solar1.webp"
+            alt="Solar panels generating clean energy"
+            className="rounded-xl shadow-md max-w-md w-full h-auto"
+          />
+        </div>
+      )}
       <QuizForm energyType={resolvedParams.type} questions={questions} />
     </main>
   );
