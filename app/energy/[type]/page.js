@@ -44,8 +44,28 @@ export default async function EnergyDetailPage({ params }) {
       {resolvedParams.type === "solar" && (
         <div className="flex justify-center my-8">
           <img
-            src="/solar1.webp"
+            src="/solar2.webp"
             alt="Solar panels generating clean energy"
+            className="rounded-xl shadow-md max-w-md w-full h-auto"
+          />
+        </div>
+      )}
+      {/* Show wind image before quiz if type is 'wind' */}
+      {resolvedParams.type === "wind" && (
+        <div className="flex justify-center my-8">
+          <img
+            src="/wind1.webp"
+            alt="Wind turbines generating clean energy"
+            className="rounded-xl shadow-md max-w-md w-full h-auto"
+          />
+        </div>
+      )}
+      {/* Show hydro image before quiz if type is 'hydro' */}
+      {resolvedParams.type === "hydro" && (
+        <div className="flex justify-center my-8">
+          <img
+            src="/hydro1.webp"
+            alt="Hydroelectric dam generating clean energy"
             className="rounded-xl shadow-md max-w-md w-full h-auto"
           />
         </div>
