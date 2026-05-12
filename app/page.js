@@ -17,6 +17,14 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Three energy image before cards */}
+      <div className="flex justify-center mt-10">
+        <img
+          src="/three_energy.webp"
+          alt="Solar, wind, and hydro energy illustration"
+          className="rounded-xl shadow-md max-w-2xl w-full h-auto"
+        />
+      </div>
       <section className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {cardOrder.map((type) => {
           const topic = ENERGY_TOPICS[type];
